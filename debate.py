@@ -79,13 +79,13 @@ if "__main__" == __name__:
     args = ArgumentParser()
     args.add_argument("--prompt", "-p", type=str, required=True, help="""The initial promp to start the debate off. Should be from the perspective of role1.\n
                       For example: \n
-                      \"Should governments subsidise fuel? I think they are good for the nation.\"""")
+                      \"Should governments subsidize fuel? I think they are good for the nation.\"""")
     args.add_argument("--role1", "-r1", type=str, required=True, help="""The role to be played by the first debater. Should be opposite to that of role2.\n
                       For example: \n
                       \"You are a huge advocate for fuel subsidies by the government. Push your ideas forward.\"""")
     args.add_argument("--role2", "-r2", type=str, required=True, help="""The role to be played by the second debater. Should be opposite to that of role2.\n
                       For example: \n
-                      \"You are highly against the subsidising of fuel costs by governments. Push your ideas forward.\"""")
+                      \"You are highly against the subsidizing of fuel costs by governments. Push your ideas forward.\"""")
     args.add_argument("--steps", "-s", type=int, help="The number of steps to run for. If not set then user input is required to produce each step.", default=None)
     parser = args.parse_args()
     initial_prompt = parser.prompt
